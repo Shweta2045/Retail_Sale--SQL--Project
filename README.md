@@ -247,7 +247,8 @@ FROM retail_sales
 GROUP BY MONTH(sale_date)
 ORDER BY monthly_sales DESC;
 ```
-<img width="1171" height="662" alt="image" src="https://github.com/user-attachments/assets/8beb98cb-eba7-4378-b5c9-558f7ce6ce50" />
+<img width="1151" height="692" alt="image" src="https://github.com/user-attachments/assets/beedad83-dc28-4942-83e8-d800aaa332c1" />
+
 
 ---
 
@@ -261,7 +262,7 @@ FROM retail_sales
 GROUP BY HOUR(sale_time)
 ORDER BY total_transactions DESC;
 ```
-<img width="1152" height="706" alt="image" src="https://github.com/user-attachments/assets/5daff4f4-035c-497e-9200-237356a1e589" />
+<img width="1152" height="703" alt="image" src="https://github.com/user-attachments/assets/0477434a-154c-4be7-9179-a8b071df7cfb" />
 
 ---
 
@@ -274,7 +275,7 @@ FROM retail_sales
 GROUP BY sale_date
 ORDER BY sale_date;
 ```
-<img width="1166" height="695" alt="image" src="https://github.com/user-attachments/assets/d395a296-35f8-4dc2-8949-9794a124d018" />
+<img width="1153" height="707" alt="image" src="https://github.com/user-attachments/assets/55f5eeb8-f233-42f5-be8f-24c726066167" />
 
 ---
 
@@ -288,7 +289,7 @@ FROM retail_sales
 GROUP BY customer_id
 HAVING categories_purchase>1;
 ```
-<img width="1148" height="698" alt="image" src="https://github.com/user-attachments/assets/fbe93a30-d470-4ddb-b973-4ef1560db9e8" />
+<img width="1158" height="705" alt="image" src="https://github.com/user-attachments/assets/515fce8d-dcc5-4d14-a765-b7ecab8af71d" />
 
 
 ---
@@ -302,7 +303,7 @@ FROM retail_sales
 GROUP BY category
 ORDER BY revenue ASC;
 ```
-<img width="1157" height="698" alt="image" src="https://github.com/user-attachments/assets/9ef7ac7b-3cd7-4c02-b518-06fc99e9c8c3" />
+<img width="1155" height="697" alt="image" src="https://github.com/user-attachments/assets/16d25933-e152-49a0-9dbc-5b341fa0c3af" />
 
 ---
 
@@ -315,7 +316,7 @@ FROM retail_sales
 GROUP BY customer_id
 HAVING purchase_count > 1;
 ```
-<img width="1167" height="701" alt="image" src="https://github.com/user-attachments/assets/9a3282bf-3118-4eb1-9783-fdebeb49e103" />
+<img width="1150" height="698" alt="image" src="https://github.com/user-attachments/assets/cf264abb-d7d4-411e-8060-c3c85210d3e0" />
 
 ---
 ## Find duplicate transaction IDs
@@ -328,7 +329,7 @@ FROM retail_sales
 GROUP BY transaction_id
 HAVING count(*) > 1;
 ```
-<img width="1142" height="700" alt="image" src="https://github.com/user-attachments/assets/6cd05cc9-ec0e-4c40-80b2-d513eda69a7b" />
+<img width="1155" height="710" alt="image" src="https://github.com/user-attachments/assets/824a0273-fdca-414c-8eff-e0b5b67be24b" />
 
 
 ---
@@ -338,23 +339,7 @@ HAVING count(*) > 1;
 SELECT sum(total_sale - cogs) AS total_profit
 FROM retail_sales;
 ```
-<img width="1142" height="696" alt="image" src="https://github.com/user-attachments/assets/07cffebe-1929-4a0e-851e-cd6781d4d00f" />
-
-
----
-
-## Find Peak Sales Date
-
-```sql
-SELECT sale_date,
-sum(total_sale) AS total_sales
-FROM retail_sales
-GROUP BY sale_date
-ORDER BY total_sales DESC
-LIMIT 1; 
-```
-<img width="1152" height="697" alt="image" src="https://github.com/user-attachments/assets/71a4e6f0-af7e-45cc-835d-0212a8661d59" />
-
+<img width="1160" height="706" alt="image" src="https://github.com/user-attachments/assets/26cf82f8-2ff9-436f-8100-bc5b632aa344" />
 
 ---
 
@@ -368,7 +353,7 @@ GROUP BY sale_date
 ORDER BY total_sales DESC
 LIMIT 1; 
 ```
-<img width="1152" height="697" alt="image" src="https://github.com/user-attachments/assets/71a4e6f0-af7e-45cc-835d-0212a8661d59" />
+<img width="1152" height="698" alt="image" src="https://github.com/user-attachments/assets/0dc40fa9-6e72-4c9b-9c45-34a98844d8bc" />
 
 
 ---
@@ -393,8 +378,7 @@ LIMIT 1;
 
 ## 📈 Monthly Revenue Analysis
 
-<img width="1093" height="661" alt="image" src="https://github.com/user-attachments/assets/f533b0a1-d279-4508-8ad6-63689df41301" />
-
+<img width="1142" height="695" alt="image" src="https://github.com/user-attachments/assets/803ce7c6-3860-4cdb-b2b3-cba3c6f09a0a" />
 
 ---
 
