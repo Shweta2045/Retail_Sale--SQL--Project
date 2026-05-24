@@ -87,7 +87,8 @@ WHERE transaction_id IS NULL
    OR cogs IS NULL
    OR total_sale IS NULL;
 ```
-<img width="1155" height="651" alt="image" src="https://github.com/user-attachments/assets/0d30479a-5a99-4ae5-9be0-de4144468858" />
+<img width="1142" height="702" alt="image" src="https://github.com/user-attachments/assets/cac22677-e6ec-4bb6-8c5d-9d7edc8cff9c" />
+
 
 ---
 
@@ -115,8 +116,8 @@ RENAME COLUMN quantiy TO quantity;
   count(*) as total_record
   FROM retail_sales
 ```
+<img width="1143" height="702" alt="image" src="https://github.com/user-attachments/assets/52872e5e-83f2-4f2b-8568-16f5bb1964c0" />
 
-<img width="1152" height="663" alt="image" src="https://github.com/user-attachments/assets/7502e25f-ce8d-4644-a5e0-4d2107928316" />
 
 ---
 
@@ -126,7 +127,7 @@ RENAME COLUMN quantiy TO quantity;
  SELECT DISTINCT(category) from retail_sales;
 ```
 
-<img width="1147" height="667" alt="image" src="https://github.com/user-attachments/assets/8bda9c6c-1965-4acf-b9b7-2aae43eb48d1" />
+<img width="1168" height="707" alt="image" src="https://github.com/user-attachments/assets/a3bc35c0-c9c9-4bb6-9654-8ef9c08981f2" />
 
 
 ---
@@ -138,8 +139,7 @@ RENAME COLUMN quantiy TO quantity;
  DISTINCT(customer_id) as unique_customer
  FROM retail_sales;
 ```
-
-<img width="1157" height="692" alt="image" src="https://github.com/user-attachments/assets/3641cf22-08bc-4efd-8e5b-d8273f123520" />
+<img width="1161" height="695" alt="image" src="https://github.com/user-attachments/assets/b493d526-ecde-4386-bda4-70c4d12907c8" />
 
 ---
 
@@ -153,8 +153,8 @@ RENAME COLUMN quantiy TO quantity;
 SELECT avg(age) as Avg_age
  FROM retail_sales;
 ```
+<img width="1143" height="697" alt="image" src="https://github.com/user-attachments/assets/84b52a34-b9c5-4ba6-ada2-6636d4118280" />
 
-<img width="1148" height="663" alt="image" src="https://github.com/user-attachments/assets/109c46e3-ea57-456a-9222-8a353a0abe20" />
 
 
 ---
@@ -168,9 +168,7 @@ SELECT avg(age) as Avg_age
 FROM retail_sales
  GROUP BY 1;
 ```
-
-
-<img width="1158" height="708" alt="image" src="https://github.com/user-attachments/assets/a03793d4-92a0-4db8-b14a-7a61581ded93" />
+<img width="1142" height="695" alt="image" src="https://github.com/user-attachments/assets/6405ae7b-fc79-49c3-b22a-1fc324ecda9c" />
 
 
 ---
@@ -186,7 +184,7 @@ FROM retail_sales
 GROUP BY gender;
 ```
 
-<img width="1153" height="690" alt="image" src="https://github.com/user-attachments/assets/0d787862-1b16-4d55-8732-b1ae3b5c2bd3" />
+<img width="1156" height="692" alt="image" src="https://github.com/user-attachments/assets/340aed03-d8e0-4a14-ab0b-7597c1d1a5ef" />
 
 ---
 
@@ -201,8 +199,8 @@ GROUP BY customer_id
 ORDER BY total_spent DESC
 LIMIT 2;
 ```
+<img width="1161" height="697" alt="image" src="https://github.com/user-attachments/assets/e0e7f275-d6ba-46ad-9410-d3082a58e21b" />
 
-<img width="1157" height="696" alt="image" src="https://github.com/user-attachments/assets/27538d8e-977e-44c1-8daf-d656e571d125" />
 
 ---
 ## Product Analysis Questions
@@ -219,7 +217,7 @@ LIMIT 2;
  DESC
  LIMIT 1;
 ```
-<img width="1160" height="696" alt="image" src="https://github.com/user-attachments/assets/080df802-5763-4e52-a045-c2f4320f48db" />
+<img width="1132" height="686" alt="image" src="https://github.com/user-attachments/assets/30b401b5-aeba-4975-97df-4f9b5efabde4" />
 
 ---
 
@@ -235,7 +233,7 @@ LIMIT 2;
  DESC
  LIMIT 1;
 ```
-<img width="1162" height="672" alt="image" src="https://github.com/user-attachments/assets/f4cd6c62-7009-4c57-9c77-f20cda46cb94" />
+<img width="1132" height="686" alt="image" src="https://github.com/user-attachments/assets/83104d93-bcff-4c95-a842-92254610cc85" />
 
 ---
 ## Time-Based EDA Questions
